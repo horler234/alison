@@ -1,0 +1,243 @@
+@media screen and ( max-width: 768px )
+    .hamburger
+        position: fixed
+        top: 25px
+        right: 20px
+        z-index: 10
+        height: 30px
+        cursor: pointer
+        display: none
+
+    .line1,
+    .line2,
+    .line3
+        width: 20px
+        height: 4px
+        border-radius: 5px
+        background-color: #000000
+        transition: all 1s ease
+
+    .line2
+        transform: translateY(4px)
+        width: 10px
+        transition: all .3s ease
+
+    .line3
+        transform: translateY(8px)
+
+    .close
+        top: 30px
+    
+    .close .line1
+        transform: rotate(45deg)
+    .close .line3
+        margin-top: -8px
+        transform: rotate(-45deg)
+    .close .line2
+        width: 0
+    
+    ul.nav-list
+        display: none
+
+    ul.nav-list.responsive
+        animation: navbar-left 1s ease-in-out
+        -webkit-animation: navbar-left 1s ease-in-out
+        display: flex
+        flex-direction: column
+        position: absolute
+        top: 0
+        right: 0
+        padding: 50px 30px
+        background-color: #ffffff
+        -webkit-box-shadow: 1px 2px 15px 2px rgba(0,0,0,0.1)
+        -moz-box-shadow: 1px 2px 15px 2px rgba(0,0,0,0.1)
+        box-shadow: 1px 2px 15px 2px rgba(0,0,0,0.1)
+        transition: all .8s ease
+    
+    ul.nav-list.responsive li.nav-list-item
+        background-color: transparent
+        margin-left: 0
+        padding: 50px
+
+    ul.nav-list.responsive li.nav-list-item a
+        font-size: 14px
+        font-weight: bold
+
+    ul.nav-list.responsiveReturn
+        transform: translateY(-100%)
+        animation: navbar-right 1s ease-in-out
+        -webkit-animation: navbar-right 1s ease-in-out
+
+    @keyframes navbar-left
+        0%
+            transform: translateY(-100%)
+        100%
+            transform: translateY(0)
+
+    @-webkit-keyframes navbar-left
+        0%
+            transform: translateY(-100%)
+        100%
+            transform: translateY(0)
+
+    @keyframes navbar-right
+        0%
+            transform: translateY(0)
+        100%
+            transform: translateY(-100%)
+
+    @-webkit-keyframes navbar-right
+        0%
+            transform: translateY(0)
+        100%
+            transform: translateY(-100%)
+
+    .color-toggle-wrapper
+        display: none
+
+    .color-toggle-wrapper.mobile-toggle
+        display: flex
+        width: 40px
+        height: 40px
+        position: fixed
+        // top: 650px
+        bottom: 30px
+        right: 20px
+        background-color: #ffffff
+        z-index: 5
+        // display: none
+
+    p.about-class
+        width: 100%
+
+    ul.portfolio-list li.portfolio-list-item a
+        font-size: 13px
+        margin-right: 0
+
+    ul.portfolio-list
+        justify-content: space-between
+
+    .about-wrapper
+        width: 80%
+
+    .logo-wrapper a.logo-link img
+        width: 70px
+
+    header
+        padding-top: 200px
+
+    h1.section-title
+        font-size: 2.3rem
+        margin-bottom: 20px
+
+    p.portfolio-title
+        margin-bottom: 20px
+        text-align: center
+
+    .header-text
+        margin-bottom: 180px
+
+    h1.port
+        text-align: center
+
+    section#about-section
+        padding-top: 80px
+
+    .about-big-title
+        top: 1200px
+        left: 5%
+        font-size: 5.8rem
+
+    .about-btn-wrapper
+        width: 130px
+
+    .about-flex-content
+        width: 100%
+        margin-bottom: 50px
+
+    p.flex-info
+        font-size: 12px
+
+    p.number
+        margin-bottom: 0
+        margin-top: 20px
+
+    .portfolio-container
+        width: 90%
+
+    .portfolio-flex
+        margin-bottom: 40px
+
+    .first-portfolio-content,
+    .second-portfolio-content,
+    .third-portfolio-content,
+    .fourth-portfolio-content,
+    .fifth-portfolio-content,
+    .sixth-portfolio-content,
+    .seventh-portfolio-content,
+    .eight-portfolio-content
+        width: 100%
+        margin-bottom: 10px
+
+    .sub-content
+        margin-bottom: 10px
+
+    .portfolio-big-title
+        right: 5%
+        top: 5110px
+
+    .contact-info-container,
+    .contact-form-container,
+    .small-input-container
+        width: 100%
+    
+    .contact-info-flex
+        margin-bottom: 50px
+
+    .contact-icon-wrapper
+        width: 25px
+
+    .form-submit-wrapper
+        width: 130px
+
+    .form-submit-wrapper input
+        font-size: 14px
+
+    .footer-logo-wrapper
+        width: 100%
+        text-align: center
+        margin-bottom: 40px
+
+    .footer-icons
+        display: flex
+        justify-content: space-between
+        width: 60%
+        margin: auto
+
+    a.footer-icon-link
+        margin: 0
+
+    footer
+        padding: 40px 0
+
+@media screen and ( max-width: 600px )
+    .portfolio-big-title
+        top: 4110px
+
+    .about-big-title
+        top: 1800px
+
+    // .color-toggle-wrapper.mobile-toggle
+    //     top: 740px
+
+@media screen and ( max-width: 375px )
+    .portfolio-big-title
+        top: 4000px
+
+@media screen and ( max-width: 320px )
+    .portfolio-big-title
+        top: 3800px
+
+@media screen and ( max-width: 280px )
+    .portfolio-big-title
+        top: 3650px
