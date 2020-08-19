@@ -118,7 +118,8 @@ ul.nav-list li.nav-list-item a.active:before {
   align-items: center;
   transform: translateY(-5px);
   cursor: pointer;
-  transition: all 0.8s ease; }
+  transition: all 0.8s ease;
+  display: none; }
 
 .header-text {
   margin-bottom: 235px; }
@@ -131,8 +132,23 @@ ul.nav-list li.nav-list-item a.active:before {
   align-items: center;
   border-radius: 50%;
   border: 1px solid #ffffff;
-  margin: auto; }
+  margin: auto;
+  animation: float 5s ease infinite; }
 
+@keyframes float {
+  0% {
+    transform: translateY(-50px); }
+  50% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-50px); } }
+@-webkit-keyframes float {
+  0% {
+    transform: translateY(-50px); }
+  50% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-50px); } }
 .home-title-wrapper {
   position: absolute;
   top: 83px;
@@ -309,8 +325,15 @@ form input:focus {
   font-weight: 700;
   margin-top: 30px; }
 
-.mobile-toggle {
-  display: none; }
+.color-toggle-wrapper.mobile-toggle {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 90px;
+  background-color: #ffffff;
+  z-index: 5; }
 
 .preload-container {
   width: 100vw;
